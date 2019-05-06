@@ -36,12 +36,12 @@ public class CommonSteps {
      */
     @Given("logs in with user {string}")
     public void logsInWithUser(final String key) {
-        final String passwordKey = String
-                .format("credentials.%s.password", key);
+//        final String passwordKey = String
+//                .format("credentials.%s.password", key);
         DriverManager.getInstance().getDriver().get(Environment.getInstance()
                 .getValue("url.login"));
-        this.login.loginAs(Environment.getInstance().getUserName(key),
-                Environment.getInstance().getValue(passwordKey));
+//        this.login.loginAs(Environment.getInstance().getUserName(key),
+//                Environment.getInstance().getValue(passwordKey));
     }
 
     /**
